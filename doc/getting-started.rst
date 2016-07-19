@@ -92,11 +92,10 @@ See the `Image chapter <images.rst>`_ for more informations about the fields in 
 Deploy containers
 -----------------
 
-The first containers we'll need to deploy will be the archive, backup and backup-upload containers because theses are containers used by Clouder (like the registry one).
+The first containers we'll need to deploy will be the backup and backup-upload containers because theses are containers used by Clouder (like the registry one).
 
-First generate the archive and backup-upload containers (because they are containers without link). Note that backup-upload container shall be in a distant server to protect your backups, but for this tutorial you can let it in the same server.
+First generate the backup-upload containers (because they are containers without link). Note that backup-upload container shall be in a distant server to protect your backups, but for this tutorial you can let it in the same server.
 
-.. image:: images/gettingstarted-archive-container.png
 .. image:: images/gettingstarted-backupupload-container.png
 
 Then, create the backup container. This one require a link to the backup-upload to know where the backup shall be exported.
